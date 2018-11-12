@@ -1,0 +1,350 @@
+body{
+	font-family: Calibri,serif;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	font-size: 45px; 
+	
+}
+header{
+	height: 120px;
+	text-align: center;
+	background-repeat: no-repeat;
+
+}
+footer{
+	height:80px;
+	bottom:0px;
+	left: 0px;
+	right: 0px;
+	text-align:center;
+	background-color:#313231;
+	border-top:2px solid #AAA;
+	color: white;
+	position:absolute;
+	width: 100%;
+
+}
+nav li{
+	list-style-type:none;
+	float:left; 
+}
+nav ul{
+	margin:0px;
+	padding:0px;
+}
+nav{
+	width:100%;
+	background-color:#06170e;
+}
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 30px ;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+nav li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+.table{
+	display: table;
+	margin: 0 auto;
+}
+.menu1:hover{
+	border-top: 5px solid #4c8;
+	background-color: rgba(64, 200, 130, 0.15);
+}
+.menu2:hover{
+	border-top: 5px solid #f1dc4f;
+	background-color: rgba(241, 211, 79, 0.15);
+}
+.menu3:hover{
+	border-top: 5px solid #0070bb;
+	background-color: rgba(000, 112, 192, 0.15);
+}
+.menu4:hover{
+	border-top: 5px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+}
+.menu5:hover{
+	border-top: 5px solid #40fbec;
+	background-color: rgba(64, 251, 1, -50);
+}
+.menu6:hover{
+	border-top: 5px solid #f902f0;
+	background-color: rgba(64, 251, 1, -50);
+}
+section{
+	width: 100%;
+	min-height: 300%;
+	padding-bottom: 10px;
+	margin-bottom: 10%;
+}
+.sec{
+	margin: 0px 10px;
+}
+.left{
+	float: left;
+	position: relative;
+	top: 30px;
+	width: 30%;
+
+}
+.right{
+	float: right;
+	width: 70%;
+}
+p{
+	font-size: 25px;
+ }
+ #Cherif{
+ 	border-top: 5px solid #4c8;
+
+ }
+ #emilio{
+ 	border-top: 5px solid #e6e41a;
+ }
+  #gaveria{
+ 	border-top: 5px solid #e65d1a;
+ }
+ .leftt{
+ 	left: 150px;
+ 	width: 100px;
+ 	position: relative;
+
+ }
+ .rightt{
+ 	float: right;
+ 	width: 300px;
+ }
+  #pablo{
+ 	border-top: 5px solid #3b29e9;
+ }
+ #medelin{
+ 	border-top: 5px solid #e44d26;
+ }
+ #njool{
+ 	border-top:5px solid #0dff01;
+ }
+ .couleur{
+ 	background-color:#4c8;
+ 	height:60px;
+ }
+ .couleurs{
+ 	background-color:#013dff;
+ 	height:60px;
+ }
+ .couleurss{
+ 	background-color:#e6e41a; 
+ 	height:60px;
+
+ }
+ .couleursss{
+ 	background-color:#e44d26; 
+ 	height:60px;
+ }
+  .couleurssss{
+ 	background-color:#40fbec; 
+ 	height:60px;
+ }
+   .couleursssss{
+ 	background-color:#f902f0; 
+ 	height:60px;
+ }
+ .righter{
+ 	position: absolute;
+ 	float: right;
+ 	right: 30%;
+ 	top: 350px;
+
+ }
+ .fff{
+ 	position: absolute;
+ 	top: 350px;
+ }
+ .righterr{
+ 	position: absolute;
+ 	float: right;
+ 	right: 15%;
+ 	top: 350px;
+ }
+ .rrr{
+ 	position: absolute;
+ 	top: 700px;
+ 	float:right;
+ 	right:35px;
+ }
+ .foot{
+ 	position: absolute;
+ 	top: 950px;
+ }
+ .eee{
+ 	position: absolute;
+ 	float: left;
+ 	left: 20%;
+ 	top: 680px; 
+ }
+
+ /*formulaire*/
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    width: 50%; 
+    margin-left: 25%;
+    padding: 12px; 
+    font-size: 20px; 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style inputs with type="text",email */
+input[type=email] {
+    width: 50%; /* Full width */
+    margin-left: 25%;
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #0ac4b5;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset] {
+    background-color: #0ac4b5;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.manquer {
+	margin-left:41%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=reset]:hover {
+    background-color:red;
+}
+
+/* Add a background color and some padding around the form */
+.container{
+    border-radius: 0px;
+    background-color: #06897e;
+    padding: 20px;
+}
+.container1{
+    border-radius: 0px;
+    background-color: #8f6c8e;
+    padding: 20px;
+}
+.descend{
+	position:relative;
+	top:80px;
+}
+.civilite label{
+	margin-left: 25%;
+	width: 300px;
+	color: #000000;
+	font-size:25px;
+
+}
+.civilite{
+	color: #000000;
+	margin-left: 300px;
+	font-size:18px;
+
+}
+/*.chek{
+	color: #000000;
+	font-size: 25px;
+	margin-left: 42%;
+}*/
+
+.seelect  select {
+    width: 50%; /* Full width */
+    margin-left: 25%;
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.civilite {
+    width: 50%; /* Full width */
+    margin-left: 25%;
+    background-color: white;
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.chek {
+    width: 50%; /* Full width */
+    margin-left: 25%;
+    background-color: white;
+    font-size: 20px;
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.pass1 input[type=password]{
+    width: 50%; /* Full width */
+    margin-left: 25%;
+    background-color: white;
+    font-size: 20px;
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=submit] {
+    background-color: #0ac4b5;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset] {
+    background-color: #0ac4b5;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ 
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AVATAR</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="img/logo.png">
+	</header>
+</br>
+</br>
+			<nav class="table">
+			<ul>
+				<li class="menu1"><a href="index.html">ACCUEIL</a></li>
+				<li class="menu2"><a href="personnel.html">PERSONNEL</a></li>
+				<li class="menu3"><a href="infopro.html">PROFESSIONNEL</a></li>
+				<li class="menu4"><a href="loisir.html">LOISIRS</a></li>
+				<li class="menu5"><a href="contact.html">CONTACT</a></li>
+				<li class="menu6"><a href="inscription.html">INSCRIPTION</a></li>
+			</ul>
+
+		</nav>
+<div class="couleurssss">
+	<center>
+<h1>ME CONTACTEZ</h1>
+</center>
+</div>
+<!--formulaire-->
+<div class="container">
+  <form method="POST" action="cible.php">
+
+  		<div class="civilite">
+  			<label class="inser" id="civilite"> Civilité : </label>
+  			<input type="radio" name="civilite" value="M." >M.
+  			<input type="radio" name="civilite" value="Mme" >Mme
+  		</div>
+
+    <label for="nom"></label>
+    <input type="text" id="nom" class="inser" name="nom" placeholder="Votre Nom" required>
+
+    <label for="prenom"></label>
+    <input type="text" id="prenom" class="inser" name="prenom" placeholder="Votre Prenom" required>
+    <span id="missPrenom"></span>
+
+    <label for="mail"></label>
+    <input type="email" id="mail" class="inser" name="email" placeholder="Votre Email" required>
+
+    <div class="chek" >
+    	<legend class="inser" id="age">Age</legend>
+    	<div>
+    		<input type="checkbox" id="ado " name="age" value="ado">
+    		<label>(8-17ans)</label>
+    	</div>
+
+    	<div>
+    		<input type="checkbox" id="adulte" name="age" value="adulte">
+    		<label>(17-55ans)</label>
+    	</div>
+
+    	<div>
+    		<input type="checkbox" id="vieux" name="age" value="vieux">
+    		<label>(55-80ans)</label>
+    	</div>
+    </div>
+    
+    <br>
+    <!--select-->
+    <div class="seelect">
+ 		 <select id="selection" name="selection" class="">
+ 		 	<option>Votre Sport :</option>
+    		<option>Basketball</option>
+    		<option>Football</option>
+    		<option>Tenis</option>
+ 		 </select>
+	</div>
+
+   
+    <label for="objet"></label>
+    <textarea id="objet" class="inser" name="message" placeholder="Veuillez m'envoyer un message..." style="height:200px"></textarea>
+    <br>
+    <br>
+    <div class="manquer">
+    <input type="submit" value="Envoyez" id="envoi" onclick="Champ_vide()">
+    &nbsp;&nbsp; 
+    <input type="reset" value="Annulez">
+    </div>
+  </form>
+</div>
+			
+<!--fin formul-->
+<!-- footer-->
+<div class="descend">
+	<center>
+	<footer>
+	<a href="https://www.facebook.com/cherif.gueye.50552"><img src="img/fac1.png" width="50" height="50"></a>&nbsp;&nbsp;
+	<a href="https://twitter.com/CherifEscobar"><img src="img/twitter1.png"  width="50" height="50"></a>
+	<br>
+COPYRIGHT© 2018 Cherif ESCOBAR
+</footer>
+</center>
+</div>
+<!-- fin footer-->
+
+<script>
+    var nom = document.getElementById('nom').value; 
+	var prenom = document.getElementById('prenom').value;
+	var mail = document.getElementById('mail').value;
+	var objet = document.getElementById('objet').value;
+	var selection=document.getElementById('selection').value;
+	function Champ_vide(){
+		//alert("Salut...");
+
+		
+		if (nom == "" || prenom == "" || mail == "" || objet == "") {
+
+			var mama = "";
+			var x = document.getElementsByClassName("inser \n");
+
+			for (i = 0; i < x.length; i++) {
+				if(x[i].value == ""){
+					mama = mama + x[i].name   ;
+				}
+			}
+
+			alert("veuillez remplire les champs\n"+ mama);
+			return true;
+		}
+	}
+	function choice1(select) {
+     alert(select.options[select.selectedIndex].text);
+}
+function teste() { 
+  var m=0;
+  for (i=0;i<6;i++) {
+    if (document.forms.ee.dmc[i].checked==true) { 
+      m=i; 
+      alert("C'est l'intervalle d'age "+Number(i+1)+" qui est sélectionné");
+      break;
+    }
+  } 
+}
+</script>
+
+</body>
+</html>
